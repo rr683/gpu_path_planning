@@ -5,30 +5,38 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
-#include <corecrt_math_defines.h>
+
+// Standard way to get M_PI on all platforms if not already defined
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
 
 int main() {
-    int W = 200, H = 200;
+    // STRESS TEST CONFIGURATION
+    int W = 1024, H = 1024;
     float res = 0.05f;
-    OccupancyGrid grid(W, H, res, -5.0f, -5.0f);
+    OccupancyGrid grid(W, H, res, -25.0f, -25.0f); // Centered roughly
 
-    // create a simple obstacle: vertical wall at x=0 from y=-1 to y=1
-    for (int gx = 80; gx < 82; ++gx) {
-        for (int gy = 50; gy < 150; ++gy) {
+    // Obstacle
+    for (int gx = W/2 - 10; gx < W/2 + 10; ++gx) {
+        for (int gy = H/4; gy < 3*H/4; ++gy) {
             grid.setLogOddsAt(gx, gy, 8.0f);
         }
     }
 
-    // robot pose
     float rx = 0.0f, ry = 0.0f;
     GridIndex start = grid.worldToGrid(rx, ry);
-    GridIndex goal = grid.worldToGrid(4.0f, 0.0f);
+    GridIndex goal = grid.worldToGrid(10.0f, 0.0f);
 
-    // simulate a full 360-degree LiDAR with many beams
-    int beams = 720;
-    float max_range = 8.0f;
+    // High-density scan
+    int beams = 10000; 
+    float max_range = 20.0f; // Longer range for larger grid
     float free_delta = -0.4f;
     float occ_delta = 0.85f;
+
+    std::cout << "=== CPU Baseline (Stress Test) ===\n";
+    std::cout << "Grid: " << W << "x" << H << "\n";
+    std::cout << "Beams: " << beams << "\n";
 
     auto t0 = std::chrono::high_resolution_clock::now();
     for (int b=0;b<beams;++b) {
@@ -37,17 +45,15 @@ int main() {
     }
     auto t1 = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> ray_time = t1 - t0;
-    std::cout << "CPU raycasting time for " << beams << " beams: " << ray_time.count() << " s\n";
+    std::cout << "CPU Raycasting Time: " << ray_time.count() * 1000.0 << " ms\n";
 
     auto t2 = std::chrono::high_resolution_clock::now();
     auto path = astarPlan(grid, start, goal);
     auto t3 = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> plan_time = t3 - t2;
-    if (path.empty()) {
-        std::cout << "No path found\n";
-    } else {
-        std::cout << "Path found length: " << path.size() << ", planning time: " << plan_time.count() << " s\n";
-    }
+    
+    if (path.empty()) std::cout << "No path found\n";
+    else std::cout << "Path found (" << path.size() << " steps). Planning Time: " << plan_time.count() * 1000.0 << " ms\n";
 
     return 0;
 }

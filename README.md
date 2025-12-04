@@ -46,6 +46,6 @@ Implement parallel raycasting and path planning on GPU to achieve ≥10× speedu
 4. **Deliverables**
    - [ ] Performance report with speedup analysis
    - [ ] Demo video with visualization
-   - [ ] (Optional) ROS 2/RViz integration
+   - [ ] (If time permits..) ROS 2/RViz integration
 
 ## Project Structure
