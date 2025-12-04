@@ -117,10 +117,25 @@ CMakeFiles/planner_gpu.dir/cuda/raycast_gpu.cu.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CUDA source to assembly CMakeFiles/planner_gpu.dir/cuda/raycast_gpu.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o: CMakeFiles/planner_gpu.dir/flags.make
+CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o: CMakeFiles/planner_gpu.dir/includes_CUDA.rsp
+CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o: /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/cuda/planner_gpu.cu
+CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o: CMakeFiles/planner_gpu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CUDA object CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o"
+	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o -MF CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o.d -x cu -rdc=true -c /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/cuda/planner_gpu.cu -o CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o
+
+CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CUDA source to CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CUDA source to assembly CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.o: CMakeFiles/planner_gpu.dir/flags.make
 CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.o: /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/src/occupancy_grid.cpp
 CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.o: CMakeFiles/planner_gpu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.o -MF CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.o.d -o CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.o -c /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/src/occupancy_grid.cpp
 
 CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.i: cmake_force
@@ -134,7 +149,7 @@ CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.s: cmake_force
 CMakeFiles/planner_gpu.dir/src/astar.cpp.o: CMakeFiles/planner_gpu.dir/flags.make
 CMakeFiles/planner_gpu.dir/src/astar.cpp.o: /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/src/astar.cpp
 CMakeFiles/planner_gpu.dir/src/astar.cpp.o: CMakeFiles/planner_gpu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/planner_gpu.dir/src/astar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/planner_gpu.dir/src/astar.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/planner_gpu.dir/src/astar.cpp.o -MF CMakeFiles/planner_gpu.dir/src/astar.cpp.o.d -o CMakeFiles/planner_gpu.dir/src/astar.cpp.o -c /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/src/astar.cpp
 
 CMakeFiles/planner_gpu.dir/src/astar.cpp.i: cmake_force
@@ -150,6 +165,7 @@ planner_gpu_OBJECTS = \
 "CMakeFiles/planner_gpu.dir/main.cu.o" \
 "CMakeFiles/planner_gpu.dir/cuda/device_grid.cu.o" \
 "CMakeFiles/planner_gpu.dir/cuda/raycast_gpu.cu.o" \
+"CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o" \
 "CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.o" \
 "CMakeFiles/planner_gpu.dir/src/astar.cpp.o"
 
@@ -159,6 +175,7 @@ planner_gpu_EXTERNAL_OBJECTS =
 CMakeFiles/planner_gpu.dir/cmake_device_link.o: CMakeFiles/planner_gpu.dir/main.cu.o
 CMakeFiles/planner_gpu.dir/cmake_device_link.o: CMakeFiles/planner_gpu.dir/cuda/device_grid.cu.o
 CMakeFiles/planner_gpu.dir/cmake_device_link.o: CMakeFiles/planner_gpu.dir/cuda/raycast_gpu.cu.o
+CMakeFiles/planner_gpu.dir/cmake_device_link.o: CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o
 CMakeFiles/planner_gpu.dir/cmake_device_link.o: CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.o
 CMakeFiles/planner_gpu.dir/cmake_device_link.o: CMakeFiles/planner_gpu.dir/src/astar.cpp.o
 CMakeFiles/planner_gpu.dir/cmake_device_link.o: CMakeFiles/planner_gpu.dir/build.make
@@ -166,7 +183,7 @@ CMakeFiles/planner_gpu.dir/cmake_device_link.o: CMakeFiles/planner_gpu.dir/compi
 CMakeFiles/planner_gpu.dir/cmake_device_link.o: CMakeFiles/planner_gpu.dir/deviceLinkLibs.rsp
 CMakeFiles/planner_gpu.dir/cmake_device_link.o: CMakeFiles/planner_gpu.dir/deviceObjects1.rsp
 CMakeFiles/planner_gpu.dir/cmake_device_link.o: CMakeFiles/planner_gpu.dir/dlink.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CUDA device code CMakeFiles/planner_gpu.dir/cmake_device_link.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CUDA device code CMakeFiles/planner_gpu.dir/cmake_device_link.o"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/planner_gpu.dir/dlink.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -178,6 +195,7 @@ planner_gpu_OBJECTS = \
 "CMakeFiles/planner_gpu.dir/main.cu.o" \
 "CMakeFiles/planner_gpu.dir/cuda/device_grid.cu.o" \
 "CMakeFiles/planner_gpu.dir/cuda/raycast_gpu.cu.o" \
+"CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o" \
 "CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.o" \
 "CMakeFiles/planner_gpu.dir/src/astar.cpp.o"
 
@@ -187,13 +205,14 @@ planner_gpu_EXTERNAL_OBJECTS =
 planner_gpu: CMakeFiles/planner_gpu.dir/main.cu.o
 planner_gpu: CMakeFiles/planner_gpu.dir/cuda/device_grid.cu.o
 planner_gpu: CMakeFiles/planner_gpu.dir/cuda/raycast_gpu.cu.o
+planner_gpu: CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o
 planner_gpu: CMakeFiles/planner_gpu.dir/src/occupancy_grid.cpp.o
 planner_gpu: CMakeFiles/planner_gpu.dir/src/astar.cpp.o
 planner_gpu: CMakeFiles/planner_gpu.dir/build.make
 planner_gpu: CMakeFiles/planner_gpu.dir/compiler_depend.ts
 planner_gpu: CMakeFiles/planner_gpu.dir/cmake_device_link.o
 planner_gpu: CMakeFiles/planner_gpu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable planner_gpu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable planner_gpu"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/planner_gpu.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

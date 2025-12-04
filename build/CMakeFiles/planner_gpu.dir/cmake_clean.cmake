@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/planner_gpu.dir/cmake_device_link.o"
   "CMakeFiles/planner_gpu.dir/cuda/device_grid.cu.o"
   "CMakeFiles/planner_gpu.dir/cuda/device_grid.cu.o.d"
+  "CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o"
+  "CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o.d"
   "CMakeFiles/planner_gpu.dir/cuda/raycast_gpu.cu.o"
   "CMakeFiles/planner_gpu.dir/cuda/raycast_gpu.cu.o.d"
   "CMakeFiles/planner_gpu.dir/main.cu.o"

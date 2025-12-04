@@ -166,6 +166,30 @@ cuda/device_grid.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/planner_gpu.dir/build.make CMakeFiles/planner_gpu.dir/cuda/device_grid.cu.s
 .PHONY : cuda/device_grid.cu.s
 
+cuda/planner_gpu.o: cuda/planner_gpu.cu.o
+.PHONY : cuda/planner_gpu.o
+
+# target to build an object file
+cuda/planner_gpu.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/planner_gpu.dir/build.make CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o
+.PHONY : cuda/planner_gpu.cu.o
+
+cuda/planner_gpu.i: cuda/planner_gpu.cu.i
+.PHONY : cuda/planner_gpu.i
+
+# target to preprocess a source file
+cuda/planner_gpu.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/planner_gpu.dir/build.make CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.i
+.PHONY : cuda/planner_gpu.cu.i
+
+cuda/planner_gpu.s: cuda/planner_gpu.cu.s
+.PHONY : cuda/planner_gpu.s
+
+# target to generate assembly for a file
+cuda/planner_gpu.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/planner_gpu.dir/build.make CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.s
+.PHONY : cuda/planner_gpu.cu.s
+
 cuda/raycast_gpu.o: cuda/raycast_gpu.cu.o
 .PHONY : cuda/raycast_gpu.o
 
@@ -329,6 +353,9 @@ help:
 	@echo "... cuda/device_grid.o"
 	@echo "... cuda/device_grid.i"
 	@echo "... cuda/device_grid.s"
+	@echo "... cuda/planner_gpu.o"
+	@echo "... cuda/planner_gpu.i"
+	@echo "... cuda/planner_gpu.s"
 	@echo "... cuda/raycast_gpu.o"
 	@echo "... cuda/raycast_gpu.i"
 	@echo "... cuda/raycast_gpu.s"

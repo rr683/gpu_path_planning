@@ -120,12 +120,12 @@ CMakeFiles/planner.dir/clean:
 CMakeFiles/planner_gpu.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/planner_gpu.dir/build.make CMakeFiles/planner_gpu.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/planner_gpu.dir/build.make CMakeFiles/planner_gpu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles --progress-num=6,7,8,9,10,11,12 "Built target planner_gpu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles --progress-num=6,7,8,9,10,11,12,13 "Built target planner_gpu"
 .PHONY : CMakeFiles/planner_gpu.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/planner_gpu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/planner_gpu.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles 0
 .PHONY : CMakeFiles/planner_gpu.dir/rule
@@ -137,7 +137,7 @@ planner_gpu: CMakeFiles/planner_gpu.dir/rule
 # codegen rule for target.
 CMakeFiles/planner_gpu.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/planner_gpu.dir/build.make CMakeFiles/planner_gpu.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles --progress-num=6,7,8,9,10,11,12 "Finished codegen for target planner_gpu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/build/CMakeFiles --progress-num=6,7,8,9,10,11,12,13 "Finished codegen for target planner_gpu"
 .PHONY : CMakeFiles/planner_gpu.dir/codegen
 
 # clean rule for target.

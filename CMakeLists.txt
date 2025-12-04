@@ -20,6 +20,7 @@ add_executable(planner_gpu
   main.cu
   cuda/device_grid.cu
   cuda/raycast_gpu.cu
+  cuda/planner_gpu.cu
   src/occupancy_grid.cpp
   src/astar.cpp
 )

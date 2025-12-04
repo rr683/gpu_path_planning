@@ -1,4 +1,4 @@
-CMakeFiles/planner_gpu.dir/main.cu.o : /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/main.cu \
+CMakeFiles/planner_gpu.dir/cuda/planner_gpu.cu.o : /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/cuda/planner_gpu.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda/bin/../targets/x86_64-linux/include/cuda_runtime.h \
     /usr/local/cuda/bin/../targets/x86_64-linux/include/crt/host_config.h \
@@ -183,9 +183,8 @@ CMakeFiles/planner_gpu.dir/main.cu.o : /mnt/c/Users/ricar/Desktop/JHUComputerSci
     /usr/include/c++/11/utility \
     /usr/include/c++/11/bits/stl_relops.h \
     /usr/include/c++/11/initializer_list \
-    /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/cuda/device_grid.h \
-    /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/cuda/raycast_gpu.h \
     /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/cuda/planner_gpu.h \
+    /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/cuda/device_grid.h \
     /usr/include/c++/11/vector \
     /usr/include/c++/11/bits/allocator.h \
     /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
@@ -201,21 +200,7 @@ CMakeFiles/planner_gpu.dir/main.cu.o : /mnt/c/Users/ricar/Desktop/JHUComputerSci
     /usr/include/c++/11/bits/hash_bytes.h \
     /usr/include/c++/11/bits/range_access.h \
     /usr/include/c++/11/bits/vector.tcc \
-    /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/src/occupancy_grid.h \
-    /usr/include/c++/11/cstdint \
-    /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-    /usr/include/stdint.h \
-    /usr/include/x86_64-linux-gnu/bits/wchar.h \
-    /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-    /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
-    /usr/include/c++/11/optional \
-    /usr/include/c++/11/exception \
-    /usr/include/c++/11/bits/exception_ptr.h \
-    /usr/include/c++/11/bits/cxxabi_init_exception.h \
-    /usr/include/c++/11/typeinfo \
-    /usr/include/c++/11/bits/nested_exception.h \
-    /usr/include/c++/11/bits/enable_special_members.h \
-    /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/src/astar.h \
+    /mnt/c/Users/ricar/Desktop/JHUComputerScience/IntroGPUpgrmg/gpu_path_planning/cuda/cuda_utils.h \
     /usr/include/c++/11/iostream \
     /usr/include/c++/11/ostream \
     /usr/include/c++/11/ios \
@@ -224,9 +209,20 @@ CMakeFiles/planner_gpu.dir/main.cu.o : /mnt/c/Users/ricar/Desktop/JHUComputerSci
     /usr/include/c++/11/bits/postypes.h \
     /usr/include/c++/11/cwchar \
     /usr/include/wchar.h \
+    /usr/include/x86_64-linux-gnu/bits/wchar.h \
     /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
     /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+    /usr/include/c++/11/exception \
+    /usr/include/c++/11/bits/exception_ptr.h \
+    /usr/include/c++/11/bits/cxxabi_init_exception.h \
+    /usr/include/c++/11/typeinfo \
+    /usr/include/c++/11/bits/nested_exception.h \
     /usr/include/c++/11/bits/char_traits.h \
+    /usr/include/c++/11/cstdint \
+    /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+    /usr/include/stdint.h \
+    /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+    /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
     /usr/include/c++/11/bits/localefwd.h \
     /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
     /usr/include/c++/11/clocale \
@@ -287,7 +283,26 @@ CMakeFiles/planner_gpu.dir/main.cu.o : /mnt/c/Users/ricar/Desktop/JHUComputerSci
     /usr/include/c++/11/bits/ostream.tcc \
     /usr/include/c++/11/istream \
     /usr/include/c++/11/bits/istream.tcc \
-    /usr/include/c++/11/chrono \
-    /usr/include/c++/11/ratio \
-    /usr/include/c++/11/ctime \
-    /usr/include/c++/11/bits/parse_numbers.h
+    /usr/include/c++/11/algorithm \
+    /usr/include/c++/11/bits/stl_algo.h \
+    /usr/include/c++/11/bits/algorithmfwd.h \
+    /usr/include/c++/11/bits/stl_heap.h \
+    /usr/include/c++/11/bits/stl_tempbuf.h \
+    /usr/include/c++/11/bits/uniform_int_dist.h \
+    /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+    /usr/include/c++/11/functional \
+    /usr/include/c++/11/tuple \
+    /usr/include/c++/11/array \
+    /usr/include/c++/11/bits/uses_allocator.h \
+    /usr/include/c++/11/bits/invoke.h \
+    /usr/include/c++/11/bits/refwrap.h \
+    /usr/include/c++/11/bits/std_function.h \
+    /usr/include/c++/11/unordered_map \
+    /usr/include/c++/11/ext/aligned_buffer.h \
+    /usr/include/c++/11/bits/hashtable.h \
+    /usr/include/c++/11/bits/hashtable_policy.h \
+    /usr/include/c++/11/bits/enable_special_members.h \
+    /usr/include/c++/11/bits/node_handle.h \
+    /usr/include/c++/11/bits/unordered_map.h \
+    /usr/include/c++/11/bits/erase_if.h \
+    /usr/include/c++/11/pstl/execution_defs.h
